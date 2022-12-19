@@ -1,0 +1,91 @@
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
+public class Case2 {
+    private static void delay() { 
+        try {
+          TimeUnit.SECONDS.sleep(1);
+        }
+        catch (Exception e) {
+          System.out.println(e);
+        }
+      }
+    // variables to store the suspects, clues, and other relevant information
+    // create a private String variable called suspect1
+    // create a private String variable called suspect2
+    // create a private String variable called clue1
+   //  create a private String variable called clue2
+    // create a private String variable called clue3 
+   //  create a private String variable called suspectWithMurderWeapon
+
+    public Case2() {
+        // initialize the suspects and clues
+        suspect1 = "John";
+        suspect2 = "Jane";
+        clue1 = "a bloody knife";
+        clue2 = "a witness who saw the suspect running away from the scene";
+        clue3 = "John Doe was wearing a blue Jacket"; 
+        suspectWithMurderWeapon = suspect2;
+    }
+
+    public void play() {
+        // print a message to the player explaining the situation
+        System.out.println(""); 
+        System.out.println("MURDER"); 
+        delay(); 
+        System.out.println("This is your second and final Case for Today, make sure you keep up the impression on higher officials!"); 
+        delay(); 
+        System.out.println("A murder has been committed, and it's up to you to solve the case!");
+        delay(); 
+        System.out.println("You have two suspects: " + suspect1 + " and " + suspect2 + ".");
+        delay(); 
+        System.out.println("You have three clues: " + clue1 + " , " + clue2 + " and " + clue3 + ".");
+        delay(); 
+
+        // create a Scanner to read player input
+        Scanner scanner = new Scanner(System.in);
+
+        // Create a while loop until the murder is solved
+        
+            // present the player with a series of choices
+            System.out.println(""); 
+            System.out.println("What would you like to do?");
+            System.out.println("1. Ask Question " + suspect1);
+            System.out.println("2. Ask Question " + suspect2);
+            System.out.println("3. Check clue 1");
+            System.out.println("4. Check clue 2");
+            System.out.println("5. Check clue 3");
+            System.out.println(""); 
+
+            // read the player's choice
+            int choice = scanner.nextInt();
+
+            // use if statements to determine the appropriate response
+            // Create a if statement for all the choices 
+            // if choice equals 1 say "I didn't do it! I have an alibi." and also print "I haven't done any murder in last 10 years". 
+            // if choice equals 2 say "I don't want to talk about it."  "Please leave me alone"
+            // if choice equals 3 say "The blood knife could be the murder weapon." and also say "When we scanned the weapon we got both John Smith and Jane Doe fingerprints
+            // if choice 4 say "I saw the suspect running away from the scene."
+            // if choice 5 say "I saw the suspect running away from the scene, he was wearing a blue Jacket."
+            // Print an else statement marking as an invalid choice
+
+            // ask the player if they have solved the case
+            System.out.println("Have you solved the case? (y/n)");
+            String solved = scanner.next();
+
+            // if the player has solved the case, check if they are correct
+                // ask the player to enter the name of the suspect they believe committed the murder
+                String suspect = scanner.next();
+
+                // use an if statement to check if the player's guess is correct
+                    // the player is correct
+                    // Then congratualte them that they have found the suspect. 
+
+
+                    break;
+                } else {
+                    //Make an else statement that the player is incorrect
+                
+                }
+            }
+        }
